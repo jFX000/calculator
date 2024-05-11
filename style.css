@@ -1,35 +1,48 @@
 body {
-    font-family: Arial, sans-serif;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, sans-serif;
     height: 100vh;
     margin: 0;
-    background-color: black
+}
+
+.logodown {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 30%;
+    width: 15%;
 }
 
 .container {
     height: 1200px;
 }
 
+.prava {
+    position: absolute;
+    left: 33%;
+    top: 92%;
+    color: rgb(234, 252, 252);
+    font-size: 150%;
+    font-style: oblique;
+}
+
 .calculator {
     border: 1px solid cadetblue;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 10px 10px cadetblue;
 }
 
-.operation {
+.operationp, .operationm, .operationu, .operationd, .operationr {
     background-color: cadetblue;
 }
 
-.back {
-    text-align: center;
-}
-
 #display {
-    width: calc(100% - 20px);
-    padding: 10px;
+    width: calc(90% - 15px);
+    padding: 20px;
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -42,20 +55,97 @@ body {
 
 button {
     padding: 10px;
-    font-size: 20px;
-    background-color: #f1f1f1;
+    font-size: 25px;
+    background-color: #e5e7f1;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 button:hover {
-    background-color: #ccc;
+    background-color: #a8a8a8;
+    box-shadow: 0 10px 10px cadetblue;
 }
 
 .clear {
     grid-column: span 4;
+    background-color: cadetblue;
 }
 
-.operation1 {
+.operationr {
     grid-column: span 2;
+}
+
+@media only screen and (max-width: 1300px) {
+    .prava {
+        top: 90%;
+        left: 24%;
+    }
+
+    .logodown {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        height: 30%;
+        width: 22%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .prava {
+        top: 90%;
+        left: 18%;
+    }
+
+    .logodown {
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        height: 30%;
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 758px) {
+    .prava {
+        top: 90%;
+        left: 18%;
+    }
+
+    .logodown {
+        position: absolute;
+        left: 30%;
+        top: 0%;
+        height: 30%;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 536px) {
+    .prava {
+        top: 85%;
+        left: 1%;
+    }
+
+    .logodown {
+        position: absolute;
+        left: 22%;
+        top: 0%;
+        height: 30%;
+        width: 58%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .prava {
+        top: 85%;
+        left: 6%;
+    }
+
+    .logodown {
+        position: absolute;
+        left: 12%;
+        top: 0%;
+        height: 30%;
+        width: 80%;
+    }
 }
