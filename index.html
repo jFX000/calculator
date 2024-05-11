@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/x-icon" href="images/logoup.png">
 </head>
 <body>
+    <div class="container"></div>
+    <a href="https://github.com/jFX000"><img class="logodown" src="images/logodown.png" alt=""></a>
     <div class="calculator">
         <input type="text" id="display" readonly placeholder="0">
         <div class="buttons">
+            <label class="prava">© 2024, THE SMART UNIVERSE - ALL RIGHTS RESERVED</label>
             <button class="number" onclick="appendNumber(1)">1</button>
             <button class="number" onclick="appendNumber(2)">2</button>
             <button class="number" onclick="appendNumber(3)">3</button>
@@ -20,11 +24,11 @@
             <button class="number" onclick="appendNumber(8)">8</button>
             <button class="number" onclick="appendNumber(9)">9</button>
             <button class="number" onclick="appendNumber(0)">0</button>
-            <button class="operation" onclick="appendOperator('+')">+</button>
-            <button class="operation" onclick="appendOperator('-')">-</button>
-            <button class="operation" onclick="appendOperator('*')">*</button>
-            <button class="operation" onclick="appendOperator('/')">/</button>
-            <button class="operation1" onclick="calculate()">=</button>
+            <button class="operationp" onclick="appendOperator('+')">+</button>
+            <button class="operationm" onclick="appendOperator('-')">-</button>
+            <button class="operationu" onclick="appendOperator('*')">*</button>
+            <button class="operationd" onclick="appendOperator('/')">/</button>
+            <button class="operationr" onclick="calculate()">=</button>
             <button class="clear" onclick="clearDisplay()">Clear</button>
         </div>
     </div>
